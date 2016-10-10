@@ -17,6 +17,7 @@ test_that("range work for vector with NA values", {
 	y <- c(1, 2, 3, 4, NA)
 	expect_length(range_value(y, na.rm=TRUE), 1)
 	expect_equal(range_value(y, na.rm=TRUE), 3)
+	expect_equal(range_value(y), NA_real_)
 })
 
 test_that("range works for vector with boolean values", {
