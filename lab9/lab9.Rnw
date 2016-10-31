@@ -15,6 +15,8 @@
 \begin{document}
 <<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
 library(knitr)
+opts_chunk$set(fig.align='center', fig.show='hold')
+options(formatR.arrow=TRUE,width=90)
 @
 \SweaveOpts{concordance=TRUE}
 
@@ -63,9 +65,8 @@ print(table2, comment=FALSE)
 From the table above, we can see that the R squared is 0.61, which is a sign of correlatin between Y and X (in this case Sale and TV). Even though this number is not very high, it works for this report because we don't have many data to train a better linear model. The residual standard error is the average amount that Y deviate from the true regression line, and that means the average deviation of sales from our predicted value is about 3260 units. The mean of Sales is about 14.0 thousand units, and this variation is almost 23.2\%. Therefore this shows that the prediction of the trained linear model is not very reliable.
 
 And we can see that the deviation becomes larger as X increases from the scatterplot graph. 
-\begin{figure}
+
 \includegraphics{../../stat159-fall2016-hw02/images/scatterplot-tv-sales.png}
-\end{figure}
 
 \section{Conclusion}
 Our trained simple linear regression model can make relatively reliable prediction when TV is small and the reliability of prediction decreases as TV gets larger. This problem can be potentially solved by fitting in a larger dataset, remove outliers or use a different kinds of model that fits our dataset better.
