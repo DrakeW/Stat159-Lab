@@ -22,7 +22,7 @@ options(formatR.arrow=TRUE,width=90)
 
 \maketitle
 
-\section{Introduction}
+\section{Abstract}
 In this report, we reproduce the main results displayed in section 3.1 Simple Linear Regression (chapter 3) of the book \href{http://www-bcf.usc.edu/~gareth/ISL/}{An Introduction to Statistical Learning}.
 
 \section{Introduction}
